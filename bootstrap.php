@@ -1,5 +1,11 @@
 <?php
 
+/*
+ * Vars
+ */
+set_time_limit(0);
+error_reporting(E_ALL & ~E_NOTICE & ~E_STRICT & ~E_DEPRECATED);
+
 /**
  * Composer autoloader.
  */
@@ -40,7 +46,4 @@ define('LARACASTS_POST_LOGIN_PATH', 'sessions');
 define('LARACASTS_SERIES_PATH', 'series');
 define('LARACASTS_TOPICS_PATH', 'browse/all');
 
-/*
- * Vars
- */
-set_time_limit(0);
+

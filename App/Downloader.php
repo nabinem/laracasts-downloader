@@ -107,7 +107,7 @@ class Downloader
         Utils::box('Downloading');
 
         $newEpisodes = Utils::compareLocalAndOnlineSeries($onlineSeries, $localSeries);
-
+        
         $newEpisodesCount = Utils::countEpisodes($newEpisodes);
 
         Utils::write(

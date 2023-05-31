@@ -46,6 +46,10 @@ class Controller
                 continue;
             }
 
+            if (empty($entry['filename'])) {
+                continue;
+            }
+
             //skip folder, we only want the files
             if (substr($entry['filename'], 0, 2) == '._') {
                 continue;
